@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+
+<style>
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+
+  }
+
+  .img-1 {
+    border-radius: 20px 20px 0 0;
+    width: 380px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .child-container {
+    height: 550px;
+    width: 380px;
+    background-color: rgb(254, 253, 255);
+    border-radius: 20px;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 0px 15px 20px 0px #cfcfcf;
+  }
+
+
+
+  .img-2 {
+    position: absolute;
+    left: 60px;
+    margin-top: 25px;
+    width: 40px;
+  }
+
+  .link {
+    position: absolute;
+    bottom: 155px;
+    right: 60px;
+    text-decoration: underline;
+    
+  }
+
+  a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    
+    
+  }
+
+  button {
+    background-color: rgb(56, 42, 225);
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+    margin-top: 20px;
+    color: white;
+    box-shadow: 0px 6px 11px 0px #a19f9f;
+    color: #ffffff;
+    border: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+    
+  }
+
+  .box {
+    background-color: #f8f7f5;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    
+  }
+
+  .middle-div {
+    padding-top: 10px;
+    
+  }
+
+  .pricing {
+    margin-right: 70px;
+    padding-top: 16px;
+    line-height: 0.5;
+    padding-bottom: 20px;
+    
+  }
+
+  p {
+    color: rgb(157, 157, 175);
+  }
+
+  .p-color {
+    color: black;
+  }
+
+</style>
+<body class="flex-container">
+  <div class="child-container">
+    <img class="img-1" src="images/illustration-hero.svg" alt="">
+    <div class="middle-div">
+      <h1>Order Summary</h1>
+
+      <p>You can now listen to millions of songs,<br> audiobooks, and podcasts on any
+         device <br> anywhere you like!</p>
+    </div>
+    
+
+    <div class="box">
+      <img class="img-2" src="images/icon-music.svg" alt="">
+      <div class="pricing">
+        <p class="p-color"><strong>Annual Plan</strong></p>
+        <p>$59.99/year</p>
+      </div>
+      <a class="link" href="#">Change</a>
+    </div>
+       
+      <button>Proceed to Payment</button>
+      <a href="">Cancel Order</a>
+  </div>
+    
+     
+</body>
+
+</html>
